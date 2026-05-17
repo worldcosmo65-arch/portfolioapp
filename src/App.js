@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import img from './Img/gojo.png'
 import './App.css';
 
 function App() {
@@ -40,40 +41,40 @@ function App() {
                   <div className="hero-header-row">
                     <div className="status-badge">
                       <span className="status-dot"></span>
-                      Open to work
+                      Working
                     </div>
                   </div>
 
                   {/* Main Bio Content */}
                   <div className="hero-content-area">
-                    <span className="designer-tag">Lead UX/UI Designer & Motion Architect</span>
+                    <span className="designer-tag">UI/UX Designer & Graphic Designer</span>
                     <h1 className="hero-name">Aravind<br />Ramesh</h1>
 
                     {/* Contact Details Grid with gold icons */}
                     <div className="hero-contact-grid">
-                      <a href="mailto:tyrone.brooks@design.io" className="contact-item">
+                      <a href="aravindramesh047@gmail.com" className="contact-item">
                         <span className="contact-icon">
                           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><path d="M22 6l-10 7L2 6" /></svg>
                         </span>
-                        tyrone.brooks@design.io
+                        aravindramesh047@gmail.com
                       </a>
-                      <a href="https://linkedin.com/in/tyronebrooks" target="_blank" rel="noreferrer" className="contact-item">
+                      <a href="https://linkedin.com/in/aravindramesh" target="_blank" rel="noreferrer" className="contact-item">
                         <span className="contact-icon">
                           <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
                         </span>
-                        linkedin.com/in/tyronebrooks
+                        linkedin.com/in/aravindramesh
                       </a>
                       <a href="tel:+14045558902" className="contact-item">
                         <span className="contact-icon">
                           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                         </span>
-                        +1 (404) 555-8902
+                        +91 77366 94253
                       </a>
                       <div className="contact-item">
                         <span className="contact-icon">
                           <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" /><circle cx="12" cy="10" r="3" /></svg>
                         </span>
-                        Atlanta, Georgia, US
+                        Eranakulam, Kerala, India
                       </div>
                     </div>
                   </div>
@@ -88,14 +89,14 @@ function App() {
                   {/* Call-to-action button */}
                   <div>
                     <a href="#summary" className="btn-cv" onClick={(e) => { e.preventDefault(); setActiveTab('summary'); }}>
-                      Explore Works & Resume
+                      Explore Works
                       <svg viewBox="0 0 24 24" style={{ width: '13px', height: '13px', marginLeft: '8px', fill: 'none', stroke: 'currentColor', strokeWidth: '3px' }}><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                     </a>
                   </div>
 
                   {/* Trusted By Client Logobar */}
                   <div className="hero-clients">
-                    <div className="clients-title">Trusted By Premium Brands</div>
+                    <div className="clients-title">Social Media</div>
                     <div className="clients-logos">
                       {/* Nike Logo */}
                       <svg className="client-logo-svg" viewBox="0 0 24 24" style={{ height: '14px' }}>
@@ -123,7 +124,7 @@ function App() {
                   <div className="silhouette-container">
                     <div className="silhouette-glow"></div>
                     <img
-                      src="./tyrone_silhouette.png"
+                      src={img}
                       alt="Tyrone Brooks Silhouette"
                       className="silhouette-img"
                     />
@@ -787,6 +788,13 @@ function App() {
             >
               <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M9 22V12h6v10" /></svg>
               Home
+            </button>
+            <button
+              className={`nav-item ${activeTab === 'works' ? 'active' : ''}`}
+              onClick={() => setActiveTab('')}
+            >
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M9 22V12h6v10" /></svg>
+              Works
             </button>
             <button
               className={`nav-item ${activeTab === 'summary' ? 'active' : ''}`}
