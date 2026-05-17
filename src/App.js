@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   // Navigation tabs: 'home' | 'summary' | 'links'
   const [activeTab, setActiveTab] = useState('home');
-  
+
   // Track open case study detail view: null | 'flowstate' | 'pulse' | 'vortex'
   const [activeProject, setActiveProject] = useState(null);
 
@@ -27,7 +27,7 @@ function App() {
            TAB ROUTER
            ========================================== */}
         <div className="tab-content">
-          
+
           {/* ----------------------------------------
              TAB 1: HOME (HERO)
              ---------------------------------------- */}
@@ -35,7 +35,7 @@ function App() {
             <div className="view-slide active">
               <div className="hero-slide">
                 <div className="hero-left">
-                  
+
                   {/* Title & Status Badge */}
                   <div className="hero-header-row">
                     <div className="status-badge">
@@ -47,31 +47,31 @@ function App() {
                   {/* Main Bio Content */}
                   <div className="hero-content-area">
                     <span className="designer-tag">Lead UX/UI Designer & Motion Architect</span>
-                    <h1 className="hero-name">Tyrone<br />Brooks</h1>
-                    
+                    <h1 className="hero-name">Aravind<br />Ramesh</h1>
+
                     {/* Contact Details Grid with gold icons */}
                     <div className="hero-contact-grid">
                       <a href="mailto:tyrone.brooks@design.io" className="contact-item">
                         <span className="contact-icon">
-                          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><path d="M22 6l-10 7L2 6" /></svg>
                         </span>
                         tyrone.brooks@design.io
                       </a>
                       <a href="https://linkedin.com/in/tyronebrooks" target="_blank" rel="noreferrer" className="contact-item">
                         <span className="contact-icon">
-                          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
                         </span>
                         linkedin.com/in/tyronebrooks
                       </a>
                       <a href="tel:+14045558902" className="contact-item">
                         <span className="contact-icon">
-                          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                         </span>
                         +1 (404) 555-8902
                       </a>
                       <div className="contact-item">
                         <span className="contact-icon">
-                          <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                          <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" /><circle cx="12" cy="10" r="3" /></svg>
                         </span>
                         Atlanta, Georgia, US
                       </div>
@@ -89,7 +89,7 @@ function App() {
                   <div>
                     <a href="#summary" className="btn-cv" onClick={(e) => { e.preventDefault(); setActiveTab('summary'); }}>
                       Explore Works & Resume
-                      <svg viewBox="0 0 24 24" style={{ width: '13px', height: '13px', marginLeft: '8px', fill: 'none', stroke: 'currentColor', strokeWidth: '3px' }}><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      <svg viewBox="0 0 24 24" style={{ width: '13px', height: '13px', marginLeft: '8px', fill: 'none', stroke: 'currentColor', strokeWidth: '3px' }}><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                     </a>
                   </div>
 
@@ -122,9 +122,9 @@ function App() {
                 <div className="hero-right">
                   <div className="silhouette-container">
                     <div className="silhouette-glow"></div>
-                    <img 
-                      src="./tyrone_silhouette.png" 
-                      alt="Tyrone Brooks Silhouette" 
+                    <img
+                      src="./tyrone_silhouette.png"
+                      alt="Tyrone Brooks Silhouette"
                       className="silhouette-img"
                     />
                   </div>
@@ -139,7 +139,7 @@ function App() {
           {activeTab === 'summary' && !activeProject && (
             <div className="view-slide active">
               <div className="summary-slide">
-                
+
                 {/* 1. SKILLS GRID SECTION */}
                 <div className="full-width-block">
                   <div className="block-header">
@@ -151,7 +151,7 @@ function App() {
                     {/* Framer */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M5 2h14v6.8l-7 7.2v6l7-7v7H5l7-7.2v-6l-7 7z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M5 2h14v6.8l-7 7.2v6l7-7v7H5l7-7.2v-6l-7 7z" /></svg>
                       </div>
                       <span className="skill-name">Framer</span>
                     </div>
@@ -159,7 +159,7 @@ function App() {
                     {/* Figma */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M8 2h8v4H8zm0 4h8v4H8zm0 4h4v4H8zm4 0h4a4 4 0 0 1-4 4zm-4 4h4v4H8zm4 4h4a4 4 0 0 1-4 4z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M8 2h8v4H8zm0 4h8v4H8zm0 4h4v4H8zm4 0h4a4 4 0 0 1-4 4zm-4 4h4v4H8zm4 4h4a4 4 0 0 1-4 4z" /></svg>
                       </div>
                       <span className="skill-name">Figma</span>
                     </div>
@@ -167,7 +167,7 @@ function App() {
                     {/* Photoshop */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--accent-gold)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9.6 15.6H8.2V9.4h3.1c1.5 0 2.2.7 2.2 1.9 0 1.3-.8 1.9-2.2 1.9H9.6v2.4zm5.7-1.1h1.4c0 .8.6 1.3 1.5 1.3s1.4-.4 1.4-1c0-.7-.6-.9-1.6-1.2-1.5-.4-2.5-.8-2.5-2.2 0-1.3 1-2.2 2.5-2.2 1.5 0 2.4.8 2.5 2.1h-1.4c0-.7-.5-1.1-1.2-1.1s-1.2.3-1.2.9c0 .6.5.7 1.5 1 1.6.4 2.6.9 2.6 2.3 0 1.4-1.1 2.3-2.7 2.3-1.7.1-2.8-.8-2.9-2.2zM9.6 11.8h1.4c.6 0 .9-.3.9-.8s-.3-.7-.9-.7H9.6v1.5z"/></svg>
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--accent-gold)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9.6 15.6H8.2V9.4h3.1c1.5 0 2.2.7 2.2 1.9 0 1.3-.8 1.9-2.2 1.9H9.6v2.4zm5.7-1.1h1.4c0 .8.6 1.3 1.5 1.3s1.4-.4 1.4-1c0-.7-.6-.9-1.6-1.2-1.5-.4-2.5-.8-2.5-2.2 0-1.3 1-2.2 2.5-2.2 1.5 0 2.4.8 2.5 2.1h-1.4c0-.7-.5-1.1-1.2-1.1s-1.2.3-1.2.9c0 .6.5.7 1.5 1 1.6.4 2.6.9 2.6 2.3 0 1.4-1.1 2.3-2.7 2.3-1.7.1-2.8-.8-2.9-2.2zM9.6 11.8h1.4c.6 0 .9-.3.9-.8s-.3-.7-.9-.7H9.6v1.5z" /></svg>
                       </div>
                       <span className="skill-name">Photoshop</span>
                     </div>
@@ -175,7 +175,7 @@ function App() {
                     {/* Illustrator */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--accent-gold)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9.7 15.6H8.2l2.6-6.2h1.6l2.6 6.2h-1.5l-.6-1.5H9.7v1.5zm.9-2.6h2.2l-1.1-2.8-1.1 2.8zm7.1 2.6h-1.5V11.2h1.5v4.4zm0-5.4h-1.5V9.4h1.5v.8z"/></svg>
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="var(--accent-gold)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9.7 15.6H8.2l2.6-6.2h1.6l2.6 6.2h-1.5l-.6-1.5H9.7v1.5zm.9-2.6h2.2l-1.1-2.8-1.1 2.8zm7.1 2.6h-1.5V11.2h1.5v4.4zm0-5.4h-1.5V9.4h1.5v.8z" /></svg>
                       </div>
                       <span className="skill-name">Illustrator</span>
                     </div>
@@ -183,7 +183,7 @@ function App() {
                     {/* Sketch */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2L2 9l10 13 10-13zM4.1 9.5L12 3.8l7.9 5.7L12 20.2z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2L2 9l10 13 10-13zM4.1 9.5L12 3.8l7.9 5.7L12 20.2z" /></svg>
                       </div>
                       <span className="skill-name">Sketch</span>
                     </div>
@@ -191,7 +191,7 @@ function App() {
                     {/* Midjourney */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" /></svg>
                       </div>
                       <span className="skill-name">Midjourney</span>
                     </div>
@@ -199,7 +199,7 @@ function App() {
                     {/* Spline */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2L2 7l10 5 10-5zm-1 9.5v10.5l-9-4.5v-10.5zm2 10.5V11.5l9-4.5v10.5z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2L2 7l10 5 10-5zm-1 9.5v10.5l-9-4.5v-10.5zm2 10.5V11.5l9-4.5v10.5z" /></svg>
                       </div>
                       <span className="skill-name">Spline 3D</span>
                     </div>
@@ -207,7 +207,7 @@ function App() {
                     {/* Blender */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2a10 10 0 0 0-3.9 19.2c.2.1.4 0 .4-.2v-2.1c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.9c0 .2.2.3.4.2A10 10 0 0 0 12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2a10 10 0 0 0-3.9 19.2c.2.1.4 0 .4-.2v-2.1c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9v2.9c0 .2.2.3.4.2A10 10 0 0 0 12 2z" /></svg>
                       </div>
                       <span className="skill-name">Blender</span>
                     </div>
@@ -215,7 +215,7 @@ function App() {
                     {/* React */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 8.66c-1.84 0-3.33 1.49-3.33 3.34s1.49 3.33 3.33 3.33 3.33-1.49 3.33-3.33-1.49-3.34-3.33-3.34zm8.67 3.34c0 .54-.04 1.07-.12 1.59l2.42 1.89c.22.17.28.48.14.73l-2.3 3.97c-.15.25-.45.35-.71.25l-2.85-1.15a8.27 8.27 0 0 1-2.75 1.59l-.43 3.03c-.04.27-.27.47-.55.47h-4.6c-.28 0-.51-.2-.55-.47l-.43-3.03a8.27 8.27 0 0 1-2.75-1.59l-2.85 1.15c-.26.1-.56 0-.71-.25l-2.3-3.97c-.14-.25-.08-.56.14-.73l2.42-1.89a8.67 8.67 0 0 1 0-3.18L1.64 8.7c-.22-.17-.28-.48-.14-.73l2.3-3.97c.15-.25.45-.35.71-.25l2.85 1.15a8.27 8.27 0 0 1 2.75-1.59l.43-3.03c.04-.27.27-.47.55-.47h4.6c.28 0 .51.2.55.47l.43 3.03a8.27 8.27 0 0 1 2.75 1.59l2.85-1.15c.26-.1.56 0 .71.25l2.3 3.97c.14.25.08.56-.14.73l-2.42 1.89c.08.52.12 1.05.12 1.59z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 8.66c-1.84 0-3.33 1.49-3.33 3.34s1.49 3.33 3.33 3.33 3.33-1.49 3.33-3.33-1.49-3.34-3.33-3.34zm8.67 3.34c0 .54-.04 1.07-.12 1.59l2.42 1.89c.22.17.28.48.14.73l-2.3 3.97c-.15.25-.45.35-.71.25l-2.85-1.15a8.27 8.27 0 0 1-2.75 1.59l-.43 3.03c-.04.27-.27.47-.55.47h-4.6c-.28 0-.51-.2-.55-.47l-.43-3.03a8.27 8.27 0 0 1-2.75-1.59l-2.85 1.15c-.26.1-.56 0-.71-.25l-2.3-3.97c-.14-.25-.08-.56.14-.73l2.42-1.89a8.67 8.67 0 0 1 0-3.18L1.64 8.7c-.22-.17-.28-.48-.14-.73l2.3-3.97c.15-.25.45-.35.71-.25l2.85 1.15a8.27 8.27 0 0 1 2.75-1.59l.43-3.03c.04-.27.27-.47.55-.47h4.6c.28 0 .51.2.55.47l.43 3.03a8.27 8.27 0 0 1 2.75 1.59l2.85-1.15c.26-.1.56 0 .71.25l2.3 3.97c.14.25.08.56-.14.73l-2.42 1.89c.08.52.12 1.05.12 1.59z" /></svg>
                       </div>
                       <span className="skill-name">React JS</span>
                     </div>
@@ -223,7 +223,7 @@ function App() {
                     {/* TailwindCSS */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" /></svg>
                       </div>
                       <span className="skill-name">Tailwind</span>
                     </div>
@@ -231,7 +231,7 @@ function App() {
                     {/* Node.js */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2.69l5.66 3.27v6.53L12 15.77l-5.66-3.28V5.96L12 2.69m0-1.5L4.5 5.5v11L12 21l7.5-4.5V5.5L12 1.19z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2.69l5.66 3.27v6.53L12 15.77l-5.66-3.28V5.96L12 2.69m0-1.5L4.5 5.5v11L12 21l7.5-4.5V5.5L12 1.19z" /></svg>
                       </div>
                       <span className="skill-name">Node.js</span>
                     </div>
@@ -239,7 +239,7 @@ function App() {
                     {/* Webflow */}
                     <div className="skill-card">
                       <div className="skill-icon-wrap">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent-gold)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H9v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" /></svg>
                       </div>
                       <span className="skill-name">Webflow</span>
                     </div>
@@ -249,10 +249,10 @@ function App() {
 
                 {/* 2. SPLIT SECTION: Resume timeline on left, Extended job details on right */}
                 <div className="summary-split-section">
-                  
+
                   {/* Left Column (Timelines, Education, Languages) */}
                   <div className="summary-split-col">
-                    
+
                     {/* Education Card */}
                     <div>
                       <h3 className="section-title">Education</h3>
@@ -327,7 +327,7 @@ function App() {
                     <div>
                       <h3 className="section-title">Professional Experience</h3>
                       <div className="experience-list">
-                        
+
                         {/* Experience 1 */}
                         <div className="exp-item">
                           <div className="exp-header">
@@ -390,12 +390,12 @@ function App() {
                   </div>
 
                   <div className="projects-grid">
-                    
+
                     {/* Project Card 1: Flowstate */}
                     <div className="featured-project-preview" onClick={() => setActiveProject('flowstate')}>
                       <div className="project-preview-header">
                         <span className="project-tag">UX/UI & Web App</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: 'var(--accent-gold)', strokeWidth: '2.5px' }}><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: 'var(--accent-gold)', strokeWidth: '2.5px' }}><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">Flowstate Web Application</h3>
@@ -412,7 +412,7 @@ function App() {
                     <div className="featured-project-preview" onClick={() => setActiveProject('pulse')}>
                       <div className="project-preview-header">
                         <span className="project-tag">Audio Interface</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: 'var(--accent-gold)', strokeWidth: '2.5px' }}><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: 'var(--accent-gold)', strokeWidth: '2.5px' }}><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">Pulse Audio Platform</h3>
@@ -429,7 +429,7 @@ function App() {
                     <div className="featured-project-preview" onClick={() => setActiveProject('vortex')}>
                       <div className="project-preview-header">
                         <span className="project-tag">3D Assets Dashboard</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: 'var(--accent-gold)', strokeWidth: '2.5px' }}><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: 'var(--accent-gold)', strokeWidth: '2.5px' }}><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">Vortex Immersive Asset Tool</h3>
@@ -453,7 +453,7 @@ function App() {
                   </div>
 
                   <div className="testimonials-grid">
-                    
+
                     {/* Testimonial 1 */}
                     <div className="testimonial-card">
                       <svg className="quote-svg" viewBox="0 0 24 24">
@@ -518,7 +518,7 @@ function App() {
           {activeTab === 'links' && !activeProject && (
             <div className="view-slide active">
               <div className="summary-slide">
-                
+
                 {/* Social links block */}
                 <div className="full-width-block">
                   <div className="block-header">
@@ -527,12 +527,12 @@ function App() {
                   </div>
 
                   <div className="projects-grid">
-                    
+
                     {/* Figma */}
                     <a href="https://figma.com/@tyronebrooks" target="_blank" rel="noreferrer" className="featured-project-preview" style={{ textDecoration: 'none' }}>
                       <div className="project-preview-header">
                         <span className="project-tag" style={{ color: '#0acf83' }}>Figma Community</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#0acf83', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#0acf83', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">Figma Creator Profile</h3>
@@ -548,7 +548,7 @@ function App() {
                     <a href="https://dribbble.com/tyronebrooks" target="_blank" rel="noreferrer" className="featured-project-preview" style={{ textDecoration: 'none' }}>
                       <div className="project-preview-header">
                         <span className="project-tag" style={{ color: '#ea4c89' }}>Dribbble Showcase</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#ea4c89', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#ea4c89', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">Dribbble Motion Shots</h3>
@@ -564,7 +564,7 @@ function App() {
                     <a href="https://behance.net/tyronebrooks" target="_blank" rel="noreferrer" className="featured-project-preview" style={{ textDecoration: 'none' }}>
                       <div className="project-preview-header">
                         <span className="project-tag" style={{ color: '#0057ff' }}>Behance Portfolio</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#0057ff', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#0057ff', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">Behance Case Studies</h3>
@@ -580,7 +580,7 @@ function App() {
                     <a href="https://github.com/tyronebrooks-design" target="_blank" rel="noreferrer" className="featured-project-preview" style={{ textDecoration: 'none' }}>
                       <div className="project-preview-header">
                         <span className="project-tag" style={{ color: '#f8fafc' }}>GitHub Source</span>
-                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#f8fafc', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        <svg viewBox="0 0 24 24" style={{ width: '14px', height: '14px', fill: 'none', stroke: '#f8fafc', strokeWidth: '2.5px' }}><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" /></svg>
                       </div>
                       <div>
                         <h3 className="project-preview-title">GitHub Repositories</h3>
@@ -632,7 +632,7 @@ function App() {
                         <div className="form-group-full" style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '10px' }}>
                           <button type="submit" className="btn-cv">
                             Send Secure Message
-                            <svg viewBox="0 0 24 24" style={{ width: '13px', height: '13px', marginLeft: '8px', fill: 'none', stroke: 'currentColor', strokeWidth: '3px' }}><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <svg viewBox="0 0 24 24" style={{ width: '13px', height: '13px', marginLeft: '8px', fill: 'none', stroke: 'currentColor', strokeWidth: '3px' }}><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                           </button>
                         </div>
                       </form>
@@ -650,13 +650,13 @@ function App() {
           {activeProject && (
             <div className="view-slide active">
               <div className="project-slide">
-                
+
                 {/* Left details panel */}
                 <div className="project-left">
-                  
+
                   {/* Back button */}
                   <button className="back-btn" onClick={() => setActiveProject(null)}>
-                    <svg className="back-icon" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <svg className="back-icon" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
                     Back to Resume Overview
                   </button>
 
@@ -762,9 +762,9 @@ function App() {
                 <div className="project-right">
                   <div className="mockup-media-card">
                     {/* Standard generated pedestal phone mockup is displayed elegantly */}
-                    <img 
-                      src="./flowstate_mockup.png" 
-                      alt={`${activeProject} Mockup Graphic`} 
+                    <img
+                      src="./flowstate_mockup.png"
+                      alt={`${activeProject} Mockup Graphic`}
                       className="mockup-img"
                     />
                   </div>
@@ -781,25 +781,25 @@ function App() {
            ========================================== */}
         {!activeProject && (
           <nav className="floating-navbar">
-            <button 
+            <button
               className={`nav-item ${activeTab === 'home' ? 'active' : ''}`}
               onClick={() => setActiveTab('home')}
             >
-              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M9 22V12h6v10" /></svg>
               Home
             </button>
-            <button 
+            <button
               className={`nav-item ${activeTab === 'summary' ? 'active' : ''}`}
               onClick={() => setActiveTab('summary')}
             >
-              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" /></svg>
               Resume & Showcases
             </button>
-            <button 
+            <button
               className={`nav-item ${activeTab === 'links' ? 'active' : ''}`}
               onClick={() => setActiveTab('links')}
             >
-              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
               Links & Contact
             </button>
           </nav>
