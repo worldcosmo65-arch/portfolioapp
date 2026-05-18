@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import img from './Img/gojo.png'
+import img from './Img/gojo.png';
+import imgBranding from './Img/branding_poster.png';
+import imgFashion from './Img/fashion_design.png';
+import imgUI from './Img/ui_design.png';
+import imgDigital from './Img/digital_art.png';
 import './App.css';
 
 function App() {
@@ -128,6 +132,101 @@ function App() {
                       alt="Tyrone Brooks Silhouette"
                       className="silhouette-img"
                     />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* ----------------------------------------
+             TAB 1.5: WORKS SHOWCASE (Curved 3D Perspective Layout)
+             ---------------------------------------- */}
+          {activeTab === 'works' && !activeProject && (
+            <div className="view-slide active">
+              <div className="works-slide">
+                {/* Cinematic Glowing Background Atmosphere */}
+                <div className="works-glow works-glow-1"></div>
+                <div className="works-glow works-glow-2"></div>
+                <div className="works-glow works-glow-3"></div>
+
+                {/* Header Title */}
+                <div className="works-header">
+                  <h1 className="works-title">A place to display your masterpiece.</h1>
+                </div>
+
+                {/* Floating Tags & 3D Cards Showcase */}
+                <div className="works-showcase-container">
+                  {/* Floating Username speech bubble tags */}
+                  <div className="username-tag username-tag-blue">
+                    <span className="username-tag-text">@coplin</span>
+                  </div>
+                  <div className="username-tag username-tag-green">
+                    <span className="username-tag-text">@andrea</span>
+                  </div>
+
+                  {/* 7 Curved Perspective Portfolio Cards */}
+                  {/* Card 1: Abstract digital art */}
+                  <div className="works-card works-card-1">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgDigital} className="works-card-img" alt="Digital Art masterpiece" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+
+                  {/* Card 2: UI/UX design */}
+                  <div className="works-card works-card-2">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgUI} className="works-card-img" alt="UI Design masterpiece" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+
+                  {/* Card 3: Branding typography */}
+                  <div className="works-card works-card-3">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgBranding} className="works-card-img" alt="Branding Poster masterpiece" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+
+                  {/* Card 4 (Center Focus): Avant-garde Fashion */}
+                  <div className="works-card works-card-4">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgFashion} className="works-card-img" alt="Fashion Design masterpiece" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+
+                  {/* Card 5: Surreal digital art */}
+                  <div className="works-card works-card-5">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgDigital} className="works-card-img" alt="Surreal digital artwork" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+
+                  {/* Card 6: Futuristic UI design */}
+                  <div className="works-card works-card-6">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgUI} className="works-card-img" alt="Futuristic UI dashboard" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+
+                  {/* Card 7: Sleek branding poster */}
+                  <div className="works-card works-card-7">
+                    <div className="works-card-reflection"></div>
+                    <img src={imgBranding} className="works-card-img" alt="Modern minimalist branding poster" />
+                    <div className="works-card-overlay"></div>
+                  </div>
+                </div>
+
+                {/* Subtext and minimal modern CTA buttons */}
+                <div className="works-footer">
+                  <p className="works-subtext">
+                    Artists can showcase their creative works while clients discover inspiring designs.
+                  </p>
+                  <div className="works-buttons-row">
+                    <button className="btn-works-primary" onClick={() => alert("Welcome to the interactive showcase! Try hovering over the cards to experience the smooth realistic 3D transitions, depth, and gloss reflections.")}>
+                      View Works
+                    </button>
+                    <button className="btn-works-secondary" onClick={() => setActiveTab('links')}>
+                      Contact
+                    </button>
                   </div>
                 </div>
               </div>
@@ -791,7 +890,7 @@ function App() {
             </button>
             <button
               className={`nav-item ${activeTab === 'works' ? 'active' : ''}`}
-              onClick={() => setActiveTab('')}
+              onClick={() => setActiveTab('works')}
             >
               <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5px"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><path d="M9 22V12h6v10" /></svg>
               Works
